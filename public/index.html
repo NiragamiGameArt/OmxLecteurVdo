@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Omxplayer Web Control</title>
+    <script src="./app.js"></script>
+</head>
+
+<body>
+    <h1>Omxplayer Web Control</h1>
+    <div>
+        <button id="play-button" onclick="playVideo('./video/video.mp4')">Play Video</button>
+        <button id="pause-button" onclick="sendCommand('p')">Pause Video</button>
+        <button id="stop-button" onclick="sendCommand('q')">Stop Video</button>
+        <button id="volume-up-button" onclick="sendCommand('+')">Volume Up</button>
+        <button id="volume-down-button" onclick="sendCommand('-')">Volume Down</button>
+        <button id="change-video-button" onclick="playVideo('./video/video2.mp4')">Change Video</button>
+        <button id="fullscreen-button" onclick="toggleFullscreen()">Toggle Fullscreen</button>
+    </div>
+</body>
+
+</html>
